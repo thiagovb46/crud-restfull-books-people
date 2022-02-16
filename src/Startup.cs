@@ -44,7 +44,13 @@ namespace RestWith.NET
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var tokenConfigurations = new TokenConfiguration();
+            services.addCors(options=>options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            }));
+            var tokenConfigurations = new TokenConfiguration();     
             new ConfigureFromConfigurationOptions<TokenConfiguration> ( 
                 Configuration.GetSection("TokenConfigurations")
             )
@@ -131,6 +137,7 @@ namespace RestWith.NET
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.useCors();
             app.UseAuthentication();    
             app.UseAuthorization();
             
