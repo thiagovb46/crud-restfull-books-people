@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   api:
-    image: ${DOCKER_REGISTRY-}api
+    image: api
     build:
       context: .
       dockerfile: src/Dockerfile
@@ -19,4 +19,3 @@ services:
         ACCEPT_EULA: "Y"
     ports:
       - 1433:1433
-
