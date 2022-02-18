@@ -6867,24 +6867,31 @@
     ]
   },
   "packageFolders": {
-    "/home/thiagovb46/.nuget/packages/": {}
+    "C:\\Users\\thiag\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/thiagovb46/workspace/wls/cursos/restnetfinal/crud-restfull-books-people/src/API.csproj",
+      "projectUniqueName": "C:\\Users\\thiag\\workspace\\WLS\\Cursos\\crud-restfull-books-people\\src\\API.csproj",
       "projectName": "API",
-      "projectPath": "/home/thiagovb46/workspace/wls/cursos/restnetfinal/crud-restfull-books-people/src/API.csproj",
-      "packagesPath": "/home/thiagovb46/.nuget/packages/",
-      "outputPath": "/home/thiagovb46/workspace/wls/cursos/restnetfinal/crud-restfull-books-people/src/obj/",
+      "projectPath": "C:\\Users\\thiag\\workspace\\WLS\\Cursos\\crud-restfull-books-people\\src\\API.csproj",
+      "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thiag\\workspace\\WLS\\Cursos\\crud-restfull-books-people\\src\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/thiagovb46/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6948,12 +6955,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[5.0.13, 5.0.13]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -6962,7 +6963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
