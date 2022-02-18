@@ -127,12 +127,15 @@ namespace RestWith.NET
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, DataContext context)
         {
              context.Database.Migrate();
+             
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RestWith.NET v1"));
+                
             }
+            
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "RestWith.NET v1"));
 
             //app.UseHttpsRedirection();
 
